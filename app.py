@@ -5,7 +5,7 @@ import streamlit as st
 
 @st.cache_resource
 def load():
-    model = joblib.load("bulldozer_model.joblib")
+    model = joblib.load("bulldozer_model (1).joblib")
     with open("bulldozer_prep.json") as f:
         prep= json.load(f)
     return model, prep
