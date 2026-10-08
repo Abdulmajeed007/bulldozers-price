@@ -53,4 +53,6 @@ if file:
         mae = (out["SalePrice"] - out["PredictedPrice"]).abs().mean()
         st.write(f"Average error vs actual price: ${mae:,.0f}")
     st.dataframe(out)
+
+st.write("Columns in uploaded file":, df.columns.tolist())
     
