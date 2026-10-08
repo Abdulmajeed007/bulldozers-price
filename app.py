@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 @st.cache_resource
-df.load():
+def load():
     model = joblib.load("bulldozer_model.joblib")
     with open("bulldozer_prep.json") as f:
         prep= json.load(f)
